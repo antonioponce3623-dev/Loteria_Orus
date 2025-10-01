@@ -21,7 +21,7 @@ pygame.display.set_caption("Lotería Orus")
 # Cargar, escalar y preparar la imagen de fondo
 try:
     # 1. Cargar la imagen desde la carpeta assets
-    background_img = pygame.image.load('assets/backgorund1.jpg').convert
+    background_img = pygame.image.load('Assets/Background1.jpg').convert()
 
     # 2. Escalar la imagen al tamaño exacto de la pantalla
     background_img = pygame.transform.scale(background_img, (screen_width, screen_height))
@@ -44,7 +44,7 @@ while running:
             if event.key == pygame.K_ESCAPE:
                 running = False
 
-    screen.fill((0, 128, 0)) # Fondo verde
+    
     pygame.display.flip()
 
 # Salir
