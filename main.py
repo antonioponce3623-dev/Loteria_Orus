@@ -18,18 +18,6 @@ except pygame.error as e:
 screen = pygame.display.set_mode((screen_width, screen_height), pygame.NOFRAME)
 pygame.display.set_caption("Lotería Orus")
 
-# Cargar, escalar y preparar la imagen de fondo
-try:
-    # 1. Cargar la imagen desde la carpeta assets
-    background_img = pygame.image.load('Assets/Background1.jpg').convert()
-
-    # 2. Escalar la imagen al tamaño exacto de la pantalla
-    background_img = pygame.transform.scale(background_img, (screen_width, screen_height))
-except pygame.error as e:
-    print(f"no se pudo cargar la imagen de fondo: {e}")
-    # Si falla, simplemente usaremos un fondo negro sólido como plan B
-    background_img = None 
-
 
 
 # Bucle principal del juego
